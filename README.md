@@ -32,7 +32,7 @@ This project implements machine learning optimization methods (Gradient Descent 
 ### On Windows (PowerShell or Command Prompt):
 
 ```powershell
-# Navigate to project directory
+# Navigate to project directory : Example
 cd "D:\python programs\Data Science\Mansi-OEC"
 
 # Create virtual environment
