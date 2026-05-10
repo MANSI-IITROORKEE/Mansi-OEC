@@ -1,5 +1,6 @@
 # Benchmarking Optimization Methods for Battery Aging Diagnostics: Gradient Descent and Bayesian Optimization
 
+
 ## Table of Contents
 1. [Executive Summary](#executive-summary)
 2. [Introduction](#introduction)
@@ -266,6 +267,7 @@ Mansi-OEC/
 │   ├── error_metrics.json
 │   └── combined_aging_metrics.csv
 └── report.md (this file)
+└── Oec-EnergyConservation.pdf (Main report)
 ```
 
 ### Implementation Details
@@ -481,50 +483,7 @@ This project successfully:
 4. ✅ Benchmarked algorithm performance and trade-offs
 5. ✅ Extracted aging mechanisms (LAM and LLI) from voltage data
 
-### Scientific Contributions
 
-1. **Methodology**: Demonstrated practical workflow for battery diagnostics using DVA
-2. **Benchmarking**: Quantified trade-offs between GD and BO for materials research
-3. **Algorithm Selection Framework**: Provided guidelines for choosing optimization methods
-
-### Future Work
-
-1. **Algorithm Improvements**:
-   - Hybrid approaches combining GD speed with BO stability
-   - Adaptive initialization strategies
-   - Multi-start optimization techniques
-
-2. **Model Enhancements**:
-   - Include temperature dependence
-   - Model capacity recovery effects
-   - Incorporate calendar aging
-
-3. **Validation**:
-   - Test on experimental data
-   - Cross-validate with post-mortem analysis
-   - Extend to different battery chemistries (LFP, NCA, etc.)
-
-4. **Scalability**:
-   - Parallel optimization for multiple cells
-   - Real-time diagnostics implementation
-   - Cloud-based analysis platform
-
-### Practical Impact
-
-**For Researchers**:
-- Clear framework for algorithm selection in materials optimization
-- Open-source tools for battery diagnostics
-- Reproducible methodology
-
-**For Industry**:
-- Cost-effective battery health monitoring
-- Predictive maintenance capabilities
-- Extended battery lifetime through early intervention
-
-**For Society**:
-- Improved EV reliability and safety
-- Reduced battery waste through better management
-- Accelerated transition to sustainable energy
 
 ---
 
@@ -570,17 +529,6 @@ https://doi.org/10.1016/j.jpowsour.2025.238049
 
 ---
 
-## Appendix
-
-### A. Parameter Definitions
-
-| Parameter | Symbol | Physical Meaning | Units | Typical Range |
-|-----------|--------|-----------------|--------|---------------|
-| Cathode Shrinkage | k_c | Fraction of active cathode remaining | - | 0.8 - 1.0 |
-| Cathode Shift | b_c | Lost lithium from cathode | mAh | 0 - 1.5 |
-| Anode Shrinkage | k_a | Fraction of active anode remaining | - | 0.9 - 1.0 |
-| Anode Shift | b_a | Lost lithium from anode | mAh | 0 - 1.5 |
-| Resistance | r | Internal resistance | Ω | 0 - 0.1 |
 
 ### B. Data Processing Pipeline
 
@@ -600,31 +548,3 @@ LAM & LLI Calculation
 Aging Diagnostics
 ```
 
-### C. Computational Environment
-
-- **OS**: Windows 11 / Linux
-- **Python**: 3.14
-- **CPU**: Multi-core recommended for BO
-- **RAM**: 8GB minimum, 16GB recommended
-- **Storage**: ~50MB for dataset and results
-
----
-
-## Acknowledgments
-
-This project builds upon the research by Zhao et al. (2025) and utilizes open-source Python libraries. The synthetic dataset was carefully designed to replicate realistic battery aging characteristics for algorithm validation.
-
-**Special Thanks**:
-- Original authors for comprehensive methodology
-- Open-source community for excellent scientific computing tools
-- Battery research community for fundamental insights
-
----
-
-**Document Version**: 1.0  
-**Last Updated**: 2025-04-24  
-**Contact**: For questions or collaboration opportunities, please refer to the code repository.
-
----
-
-*This report demonstrates the complete workflow from research paper to implementation, validation, and analysis for battery aging diagnostics using machine learning optimization methods.*
